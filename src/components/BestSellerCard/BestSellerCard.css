@@ -1,0 +1,23 @@
+.top-seller-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  width: 200px; /* Adjust size as necessary */
+}
+
+.top-seller-card .art-image {
+  width: 100%;
+  height: auto;
+}
+
+.top-seller-card .art-info {
+  padding: 8px;
+  text-align: center;
+}
+
+.top-sellers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
