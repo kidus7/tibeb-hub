@@ -8,12 +8,12 @@ import Typography from '@mui/material/Typography'; // Import Typography componen
 
 const BestSeller = ({ artPieces }) => {
   return (
-    <Box sx={{ flexGrow: 1, pt: { xs: 54, sm: 2, md: 2}, pb: 5, backgroundColor: 'rgb(25,25,25)' }}>
+    <Box sx={{ flexGrow: 1, pt: { xs: 54, sm: 2, md: 2}, pb: 5, backgroundColor: 'rgb(0,0,0)' }}>
       <Container sx={{ mt: 0, display: 'flex', flexDirection: 'column'}}>
-        <Typography fontSize={{ xs: '1.7rem', sm: '1.7rem', md: '2rem'}} variant="h4" component="h2" gutterBottom style={{ paddingTop: '20px', color: 'white', textAlign: 'start' }}>
-          <b>Best Selling Arts</b>
-        </Typography>
-        <hr style={{ width: '100%', margin: '0 auto', border: '1px solid white' }} />
+        <h2 className='best-seller-header'>
+          Best Selling Arts
+        </h2>
+        <hr style={{ width: '100%', margin: '0 auto', border: '1px solid #C3EFC0', marginTop: "1rem" }} />
 
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Grid container spacing={2} justifyContent={{ xs: 'center', sm: 'flex-start' }}>

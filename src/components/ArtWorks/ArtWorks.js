@@ -9,13 +9,13 @@ import Button from '@mui/material/Button';
 
 const ArtWorks = ({ artPieces }) => {
   return (
-    <Box sx={{ flexGrow: 1, pt: 2,  pb: 5, backgroundColor: 'rgb(25,25,25)' }}>
+    <Box sx={{ flexGrow: 1, pt: 2,  pb: 5, backgroundColor: 'rgb(0,0,0)' }}>
       <Container sx={{ mt: 0, display: 'flex', flexDirection: 'column'}}>
         {/* Header and horizontal line */}
-        <Typography variant="h4" component="h2" gutterBottom style={{ paddingTop: "10px", color: 'white', textAlign: 'start' }}>
-          <b>Art Collection</b>
-        </Typography>
-        <hr style={{ width: '100%', margin: '0 auto', border: '1px solid white' }} />
+        <h2 className='art-header' >
+          Arts
+        </h2>
+        <hr style={{ width: '100%', margin: '0 auto', border: '1px solid #C3EFC0', marginTop: '1rem' }} />
 
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'start' }}>
           <Grid container spacing={2}>

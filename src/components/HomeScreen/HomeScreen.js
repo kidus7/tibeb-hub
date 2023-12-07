@@ -8,6 +8,7 @@ import MasonryLayout from '../MasonryLayout/MasonryLayout';
 import Footer from '../Footer/Footer';
 import ContainerCard from '../ContainerCard/ContainerCard';
 import Dropdown from '../Dropdown/Dropdown'
+import HeroUpdated from '../HeroUpdated/Header';
 import Img1 from "../../assets/img13.jpg"
 import Img2 from "../../assets/img12.jpg"
 import Img3 from "../../assets/img11.jpg"
@@ -21,6 +22,7 @@ import Img10 from "../../assets/img16.jpg"
 import Img11 from "../../assets/img5.jpg"
 import Img12 from "../../assets/img18.png"
 import images from "../../Jsons/Images.json"
+import { Container } from '@mui/material';
 
 
 const HomeScreen = () => {
@@ -53,7 +55,7 @@ const HomeScreen = () => {
     const ddItems = [
         {
             id: 1,
-            title: "All Images",
+            title: "All",
             active: true
         },
         {
@@ -82,9 +84,8 @@ const HomeScreen = () => {
         <div>
             <Header />
             <Hero />
-            <BestSeller artPieces={artPieces} />
-            <ArtWorks artPieces={artPieces} />
-            <div className="flex justify-content-center" style={{ marginTop: "50px", padding: '50px' }}>
+            {/* <HeroUpdated /> */}
+            <Container maxWidth="lg" className="flex justify-content-center" style={{ marginTop: "50px", padding: '50px' }}>
                 <ContainerCard>
                     <div className={`${styles["gallery-setting"]} flex justify-content-between align-items-center`}>
                         <h1>All images</h1>
@@ -92,7 +93,9 @@ const HomeScreen = () => {
                     </div>
                     <MasonryLayout images={categoryImage} />
                 </ContainerCard>
-            </div>
+            </Container>
+            <BestSeller artPieces={artPieces} />
+            <ArtWorks artPieces={artPieces} />
             <Footer />
         </div>
     );

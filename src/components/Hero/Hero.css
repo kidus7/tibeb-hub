@@ -2,3 +2,8 @@
 .hero-container {
     position: relative; /* For absolute positioning of the buttons */
 }
+.hero-header-1 {
+    color: var(--green-white-900);
+    font-size: 2rem;
+    font-weight: bold;
+  }

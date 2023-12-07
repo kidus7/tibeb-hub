@@ -1,11 +1,18 @@
 // import styles of this component
 import styles from "./MasonryBox.module.css"
 import { PropTypes } from 'prop-types';
+import { useNavigate } from "react-router-dom"; 
 
 // MasonryBox component
 const MasonryBox = ({ wallSrc, userProf, userName, userJob }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/artdetail`);
+  };
+
   return (
-    <div className={styles["my-masonry"]}>
+    <div className={styles["my-masonry"]} onClick={handleClick}>
         <img src={wallSrc} style={{ width: "100%" }} alt="" />
         <div className={`${styles["my-masnry-description"]} flex`}>
           <div className={`${styles["my-masnry-user-box"]} flex align-items-center`}>

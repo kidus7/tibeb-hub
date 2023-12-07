@@ -13,6 +13,7 @@ import ArtCardImage2 from "../../assets/img11.jpg"
 import ArtCardImage3 from "../../assets/img4.jpg"
 import ArtCardImage4 from "../../assets/img8.jpg"
 import ArtCard from "../ArtCard/ArtCard";
+// import BrickLayout from '../BrickLayout/BrickLayout';
 
 const Hero = () => {
     const [heroImage, setHeroImage] = useState(HeroImage); // Default hero image
@@ -30,7 +31,7 @@ const Hero = () => {
     };
 
     return (
-        <Box sx={{ flexGrow: 1, pt: 2, backgroundColor: 'rgb(25,25,25)' }}>
+        <Box sx={{ flexGrow: 1, pt: 2, backgroundColor: 'rgb(0,0,0)' }}>
             <Container sx={{ mt: 0, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 0px)' }}>
                 <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Card sx={{ width: '100%', maxWidth: '100%', maxHeight: '100%', display: 'flex', flexDirection: 'row' }}>

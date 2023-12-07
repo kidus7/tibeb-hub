@@ -18,11 +18,11 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               Company Detail
             </Typography>
-            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { color: '#C3EFC0' } }}>
               Customer Support
             </Link>
             <br />
-            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { color: '#C3EFC0' } }}>
               About Us
             </Link>
           </Grid>
@@ -31,11 +31,11 @@ const Footer = () => {
             <Typography variant="h6" gutterBottom>
               Our Information
             </Typography>
-            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': {  color: '#C3EFC0'  } }}>
               Return Policy
             </Link>
             <br />
-            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            <Link href="#" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': {  color: '#C3EFC0' } }}>
               Terms of Service
             </Link>
             {/* Additional links can be added here */}

@@ -11,6 +11,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AvatarImg from '../../assets/img11.jpg'
 import Logo1 from '../../assets/logo1.png'
+import './Header.css'
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -30,7 +31,7 @@ function Header() {
             <Container maxWidth="lg">
                 <Toolbar disableGutters>
                     {/* <AdbIcon sx={{ mr: 1 }} /> */}
-                    <img style={{ width: '40px', height: '40px', paddingRight: '10px' }} alt='Logo' src={Logo1}></img>
+                    <img style={{ width: '35px', height: '35px', paddingRight: '10px' }} alt='Logo' src={Logo1}></img>
                     <Typography
                         variant="h6"
                         noWrap
@@ -38,12 +39,8 @@ function Header() {
                         href="/"
                         sx={{
                             flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
                         }}
+                        className='header-text'
                     >
                         ጥበብ Hub
                     </Typography>

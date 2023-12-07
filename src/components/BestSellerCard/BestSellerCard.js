@@ -12,7 +12,7 @@ const BestSellerCard = ({ title, imageUrl, priceRange }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/artdetail`, { replace: true });
+    navigate(`/artdetail`);
   };
 
   return (
@@ -23,7 +23,7 @@ const BestSellerCard = ({ title, imageUrl, priceRange }) => {
       mt: 3,
       position: 'relative',
       overflow: 'hidden',
-      transition: 'transform .5s',
+      transition: 'transform .1s',
       borderRadius: "20px",
       '&:hover': {
         transform: 'scale(1.03)', // Slightly scale up the card on hover
@@ -33,7 +33,7 @@ const BestSellerCard = ({ title, imageUrl, priceRange }) => {
         transform: 'translateY(-100%)', // Slide up the content on hover
       },
       '&:hover .gradient': {
-        opacity: 0, // Hide the gradient on hover to reveal content
+        opacity: 1, // Hide the gradient on hover to reveal content
       }
     }}>
       <CardMedia
@@ -53,7 +53,8 @@ const BestSellerCard = ({ title, imageUrl, priceRange }) => {
         width: '100%',
         height: '100%',
         backgroundImage: 'linear-gradient(180deg, transparent, rgba(0,0,0,.7))',
-        transition: 'opacity .5s',
+        transition: 'opacity .2s',
+        opacity: 0,
         zIndex: 1, // Ensure the gradient is above the image
       }} />
       {/* Avatar Container */}
@@ -85,14 +86,16 @@ const BestSellerCard = ({ title, imageUrl, priceRange }) => {
         visibility: 'visible',
         opacity: 1,
         transform: 'translateY(100%)',
-        transition: 'opacity .5s, transform .5s',
+        transition: 'opacity .2s, transform .53s',
         zIndex: 1, // Ensure the content is above the image but below the gradient
         p: 2,
+        // mt: 15
+        // marginTop: '15px'
       }}>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography sx={{color: '#00FF47'}}gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2">
+        <Typography sx={{color: '#C3EFC0'}} variant="body2">
           {priceRange}
         </Typography>
       </CardContent>
