@@ -39,18 +39,18 @@ const HomeScreen = () => {
     }
 
     const artPieces = [
-        { title: "Pandora", imageUrl: Img1, priceRange: "2000 - 4000 ETB" },
-        { title: "Titan", imageUrl: Img2, priceRange: "1500 - 3000 ETB" },
-        { title: "Mars", imageUrl: Img3, priceRange: "3000 - 4000 ETB" },
-        { title: "Meskot", imageUrl: Img4, priceRange: "1500 - 3000 ETB" },
-        { title: "Ras", imageUrl: Img5, priceRange: "1000 - 3000 ETB" },
-        { title: "Nigus", imageUrl: Img6, priceRange: "4000 - 5000 ETB" },
-        { title: "Sitota", imageUrl: Img7, priceRange: "2000 - 3000 ETB" },
-        { title: "Selome", imageUrl: Img8, priceRange: "2500 - 4000 ETB" },
-        { title: "Shirshir", imageUrl: Img9, priceRange: "2000 - 4000 ETB" },
-        { title: "Sabi", imageUrl: Img10, priceRange: "1000 - 2000 ETB" },
-        { title: "Zemenegna", imageUrl: Img11, priceRange: "1500 - 3000 ETB" },
-        { title: "Antsebaraki", imageUrl: Img12, priceRange: "1000 - 2000 ETB" },
+        { title: "Pandora", imageUrl: Img1, priceRange: "2000 - 4000 ETB", proImg: images.categories.all[0].user.src },
+        { title: "Titan", imageUrl: Img2, priceRange: "1500 - 3000 ETB", proImg: images.categories.all[1].user.src },
+        { title: "Mars", imageUrl: Img3, priceRange: "3000 - 4000 ETB", proImg: images.categories.all[2].user.src },
+        { title: "Meskot", imageUrl: Img4, priceRange: "1500 - 3000 ETB", proImg: images.categories.all[3].user.src },
+        { title: "Ras", imageUrl: Img5, priceRange: "1000 - 3000 ETB", proImg: images.categories.all[4].user.src },
+        { title: "Nigus", imageUrl: Img6, priceRange: "4000 - 5000 ETB", proImg: images.categories.all[5].user.src },
+        { title: "Sitota", imageUrl: Img7, priceRange: "2000 - 3000 ETB", proImg: images.categories.all[6].user.src },
+        { title: "Selome", imageUrl: Img8, priceRange: "2500 - 4000 ETB", proImg: images.categories.all[7].user.src },
+        { title: "Shirshir", imageUrl: Img9, priceRange: "2000 - 4000 ETB", proImg: images.categories.all[8].user.src },
+        { title: "Sabi", imageUrl: Img10, priceRange: "1000 - 2000 ETB", proImg: images.categories.all[9].user.src },
+        { title: "Zemenegna", imageUrl: Img11, priceRange: "1500 - 3000 ETB", proImg: images.categories.all[10].user.src },
+        { title: "Antsebaraki", imageUrl: Img12, priceRange: "1000 - 2000 ETB", proImg: images.categories.all[11].user.src },
     ]
     const ddItems = [
         {

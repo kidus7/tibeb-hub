@@ -2,4 +2,15 @@
     color: var(--green-white-100);
     font-size: 2rem;
     font-weight: bold;
-  }
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px;
+}
